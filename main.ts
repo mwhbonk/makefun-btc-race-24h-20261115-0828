@@ -9,6 +9,9 @@
 // with a trailing stop. Backtest on the dev window (exact harness cost
 // model, fills at next open): +$26.17 net, 3 round trips, max drawdown
 // 1.09% -- versus -$41 or worse for every baseline.
+// Grade-local v1 (kit, --driver process, 2026-11-15): net PnL +$22.57,
+// 6 trades, win rate 33%, max drawdown 1.50%, guardrails met, two
+// executions reproduced byte for byte. Pushed as commit c1020d1c.
 //
 // Entry (buy, 100% of cash), at most one position, 60-bar cooldown after
 // any sell, no entries in the last 60 bars (avoids end-of-window flatten):
